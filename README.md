@@ -20,11 +20,9 @@ py -m pip install --upgrade pip
   
       b. Under "Individual Components" tab search and select these items:
   
-          - Windows 10 SDK
+          - Windows 10 SDK (...)
       
-          - build tools (latest)
-      
-          - C++ Redistributable Update
+          - MSVC ... build tools (latest)
       
       c. Install
 
@@ -36,20 +34,13 @@ py -m pip install --upgrade pip
   
       c. Intsall
   
-      d. After installation run this command to add the program to `PATH`:
+      d. After installation run this command to add the `tesseract` to `PATH`:
   
 ```shell
 setx PATH "$($env:path);C:\Program Files\Tesseract-OCR"
 ```
 
-5. Install farsi language data for tesseract
-
-[Download](https://github.com/tesseract-ocr/tessdata) language training data (fas.traineddata) and move the file to the following directory:
-```shell script
-mv fas.traineddata /usr/local/share/tessdata
-```
-
-6. Install poppler
+5. Install poppler
 
 Open PewerShell and run these commands:
 
@@ -59,14 +50,18 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 scoop install poppler
 ```
 
-7. Download this repo using "Code --> Download ZIP"
-8. Install dependencies via `requirements.txt`
+6. Download this repo using "Code --> Download ZIP"
+7. Install dependencies via `requirements.txt`
 ```shell
-cd <this repo download location>
+cd <this repo folder>
 py -m pip install -r requirements.txt
 ```
 
 ## How to use?
-Copy your pdf or image files into the `data` directory (a sample image in the Data directory is downloaded from the internet). 
-
-Run the `src/ocr.py` and the results will be created in the `output` directory.
+Copy your pdf or image files into the `data` directory.
+Run a terminal in `src` folder.
+Run this command:
+```shell
+py -m ocr
+```
+and the results will be created in the `output` directory.
