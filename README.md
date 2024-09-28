@@ -19,14 +19,13 @@ py -m pip install --upgrade pip
       a. Run installer.
   
       b. Under "Individual Components" tab search and select these items:
-  
-          - Windows 10 SDK (...)
-      
-          - MSVC ... build tools (latest)
-      
+
+      - Windows 10 SDK (...)
+      - MSVC ... build tools (latest)
+
       c. Install
 
-4. Install [Tesseract](https://github.com/UB-Mannheim/tesseract/wiki)
+5. Install [Tesseract](https://github.com/UB-Mannheim/tesseract/wiki)
 
       a. Run installer
   
