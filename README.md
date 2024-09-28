@@ -10,7 +10,7 @@ Preprocessing is applied to each image before using `tesseract`. This is done to
 
 2. Upgrade pip
 
-``shell
+```shell
 py -m pip install --upgrade pip
 ```
 
@@ -26,12 +26,17 @@ py -m pip install --upgrade pip
 4. Install [Tesseract](https://github.com/UB-Mannheim/tesseract/wiki)
 
   a. Run installer
+  
   b. Under "Choose Components" setup step open "Additional language data" and check "Persian" (the list is not alphabetically ordered. it is near "Finnish")
+  
   c. Intsall
+  
   d. After installation run this command to add the program to `PATH`:
+  
 ```shell
 setx PATH "$($env:path);C:\Program Files\Tesseract-OCR"
 ```
+
 5. Install farsi language data for tesseract
 
 [Download](https://github.com/tesseract-ocr/tessdata) language training data (fas.traineddata) and move the file to the following directory:
@@ -49,7 +54,7 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 scoop install poppler
 ```
 
-7. Dowwnload this repo using "Code<> --> Download ZIP"
+7. Download this repo using "Code --> Download ZIP"
 8. Install dependencies via `requirements.txt`
 ```shell
 cd <this repo download location>
