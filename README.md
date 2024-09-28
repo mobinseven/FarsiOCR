@@ -16,22 +16,27 @@ py -m pip install --upgrade pip
 
 3. Install [VS Build Tools](https://aka.ms/vs/17/release/vs_BuildTools.exe)
 
-  a. Run installer.
-  b. Under "Individual Components" tab search and select these items:
-      - Windows 10 SDK
-      - build tools (latest)
-      - C++ Redistributable Update
-  c. Install
+      a. Run installer.
+  
+      b. Under "Individual Components" tab search and select these items:
+  
+          - Windows 10 SDK
+      
+          - build tools (latest)
+      
+          - C++ Redistributable Update
+      
+      c. Install
 
 4. Install [Tesseract](https://github.com/UB-Mannheim/tesseract/wiki)
 
-  a. Run installer
+      a. Run installer
   
-  b. Under "Choose Components" setup step open "Additional language data" and check "Persian" (the list is not alphabetically ordered. it is near "Finnish")
+      b. Under "Choose Components" setup step open "Additional language data" and check "Persian" (the list is not alphabetically ordered. it is near "Finnish")
   
-  c. Intsall
+      c. Intsall
   
-  d. After installation run this command to add the program to `PATH`:
+      d. After installation run this command to add the program to `PATH`:
   
 ```shell
 setx PATH "$($env:path);C:\Program Files\Tesseract-OCR"
