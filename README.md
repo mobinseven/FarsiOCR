@@ -10,6 +10,8 @@ Preprocessing is applied to each image before using `tesseract`. This is done to
 
 2. Upgrade pip
 
+Open PewerShell and run this:
+
 ```shell
 py -m pip install --upgrade pip
 ```
@@ -33,8 +35,8 @@ py -m pip install --upgrade pip
   
       c. Intsall
   
-      d. After installation run this command to add the `tesseract` to `PATH`:
-  
+      d. After installation open PewerShell and run this command to add the `tesseract` to `PATH`:
+
 ```shell
 setx PATH "$($env:path);C:\Program Files\Tesseract-OCR"
 ```
@@ -51,6 +53,9 @@ scoop install poppler
 
 6. Download this repo using "Code --> Download ZIP"
 7. Install dependencies via `requirements.txt`
+
+Open PewerShell and run these commands:
+
 ```shell
 cd <this repo folder>
 py -m pip install -r requirements.txt
